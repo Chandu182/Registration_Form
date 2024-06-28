@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:url('protruding-squares.svg');
+    background-repeat: repeat;
+    margin: 0;
+    padding:0;
+}
+.container{
+    width: 50%;
+    margin: 3em auto;
+    background:seashell;
+    padding: 1em;
+    border-radius: 1em;
+}
+h1{
+    font-size: 2rem;
+    font-weight: bolder;
+    text-align: center;
+    padding: 0em;
+    padding-bottom: .5em;
+}
+.registercard{
+    width: 100%;
+    padding: 2em;
+}
+.registercard label{
+    width: 50%;
+    font-size: 1.2rem;
+    color: black;
+    font-weight: bolder;
+}
+.registercard input{
+    width: 50%;
+    display: block;
+    padding: 1em;
+}
+.inputbox{
+    width: 100%;
+    padding: 1em;
+    display: flex;
+    text-align: justify;
+    align-items: center;
+    justify-content: space-between;
+}
+.btn{
+    width: 100%;
+    padding: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn button{
+    text-wrap: wrap;
+    font-size: 1rem;
+    font-weight: 900;
+    color: whitesmoke;
+    background-color: palevioletred;
+    width: 30%;
+    padding: .3em;
+    margin: 2em 9em;
+    margin-bottom: 0;
+}
+.btn button:hover{
+    background-color: black;
+    color: blueviolet;
+    border: 1px solid blueviolet;
+    cursor: pointer;
+}
+@media(max-width:768px) and (min-width:630px){
+    .container{
+        width: 80%;
+        padding: 1em;
+    }
+    .inputbox{
+        padding: 0.5em;
+    }
+}
+@media(max-width:629px){
+    .container{
+        width: 95%;
+        padding: 0;
+        height: fit-content;
+    }
+    .registercard label{
+        font-size: medium;
+    }
+    .inputbox{
+        padding: 0.4em;
+    }
+}
+
+
